@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.singleCard {
+    display: flex;
+    width: 60%;
+    /* border: 3px solid rgb(241, 234, 234); */
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    justify-content: space-between;
+    /* flex-direction: column; */
+    border-radius: 5px;
+
+    box-shadow: rgba(117, 117, 142, 0.25) 0px 50px 100px -20px, rgba(126, 124, 124, 0.3) 0px 30px 60px -30px, rgba(185, 193, 200, 0.35) 0px -2px 6px 0px inset;
+}
+.left{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 1rem;
+}
+.logo{
+    display: flex;
+    gap: 1rem;
+}
+.logo img{
+    width: 80px;
+    height: 100px;
+}
+.logo .title{
+    /* border: 3px solid rgb(241, 234, 234); */
+    display: flex;
+    flex-direction: column;
+    /* gap: 0rem; */
+}
+
+.dura .time{
+    border: 1px solid #eee;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+.title h1{
+    font-weight: 400;
+    font-size: 1.5rem;
+    /* border: 3px solid rgb(241, 234, 234); */
+    
+}
+.right{
+    width: 40%;
+    height: 350px;
+}
+.right img {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    z-index: 1; /* Ensure the image is above the gradient */
+    mask-image: linear-gradient(to right, transparent, black); /* Apply a gradient mask */
+    -webkit-mask-image: linear-gradient(to right, transparent, black); /* For compatibility with some browsers */
+    transition: opacity 0.3s ease; /* Add a smooth transition effect */
+}
+
+.right:hover img {
+    opacity: 0.8; /* Change the opacity on hover */
+}
+
+
+.social-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    /* background-color: #f0f0f0; Background color for the container */
+}
+
+.social-container div {
+    display: flex;
+    align-items: center;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+.social-container div:hover {
+    /* background-color: #dcdcdc; Background color on hover */
+}
+
+.like {
+    background-color: #3498db; 
+    color: #fff;
+}
+
+.share {
+    background-color: #2ecc71; /* Share button color */
+    color: #fff;
+}
+
+.comment {
+    background-color: #e74c3c; /* Comment button color */
+    color: #fff;
+}
